@@ -1,5 +1,6 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
 import { styles } from './styles';
+import React from 'react';
 
 export default function App() {
   return (
