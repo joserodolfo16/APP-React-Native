@@ -1,9 +1,9 @@
 import React from "react";
-import StackComponent from "./src/routes/stack";
-import TabComponent from "./src/routes/tab";
+import { Link } from 'expo-router';
+import StackLayout from "./log/app/_layout";
 
 
 
 export default function App(){
-    return <TabComponent />;
+    return <StackLayout />;
 }

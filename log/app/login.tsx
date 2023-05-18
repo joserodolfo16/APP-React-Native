@@ -1,5 +1,6 @@
 import { Pressable, StyleSheet, Text, TextInput, View } from "react-native"
 import React from "react"
+import { Link } from "expo-router";
 
 const Login = () => {
     return (
@@ -20,12 +21,14 @@ const Login = () => {
             autoCapitalize="none"
             secureTextEntry
             />
-            <Pressable style={{backgroundColor: 'blue', width: '80%', margin: 10,
-                padding: 10,
-                borderRadius: 10,
-                alignItems: 'center'}}>
-                <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold',}}>Logar</Text>
-            </Pressable>
+            <link href={"/products"}>
+                <Pressable style={{backgroundColor: 'blue', width: '80%', margin: 10,
+                    padding: 10,
+                    borderRadius: 10,
+                    alignItems: 'center'}}>
+                    <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold',}}>Logar</Text>
+                </Pressable>
+            </link>
             <View style={{flexDirection: 'row', justifyContent: 'space-between', width: '80%',}}>
                 <Pressable style={{padding: 10}}>
                 <Text style={{color: 'blue'}}>Não sei a senha.</Text>
