@@ -1,20 +1,17 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API_URL = 'https://api.example.com/products';
 
-export const fetchProducts = async (): Promise<Product[]> => {
-  try {
-    const response = await axios.get(API_URL);
-    return response.data;
-  } catch (error) {
-    throw new Error('Failed to fetch products');
-  }
-};
+const produtos = () => {
+axios.get('https://dummyjson.com/products/1')
+  .then(response => {
+    // A resposta da API estará disponível em response.data
+    console.log(response.data);
+  })
+  .catch(error => {
+    // Lidar com erros, se houver
+    console.error(error);
+  });
 
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-};
+}
 
-export { Product };
+export default produtos;

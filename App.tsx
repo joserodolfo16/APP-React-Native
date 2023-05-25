@@ -1,9 +1,13 @@
-import React from "react";
-import { Link } from 'expo-router';
-import StackLayout from "./log/app/_layout";
+import React from 'react';
+import { View } from 'react-native';
+import Login from './log/app/login';
 
+const App = () => {
+  return (
+    <View>
+      <Login />
+    </View>
+  );
+};
 
-
-export default function App(){
-    return <StackLayout />;
-}
+export default App;
