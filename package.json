@@ -1,7 +1,7 @@
 {
   "name": "log",
   "version": "1.0.0",
-  "main": "app.tsx",
+  "main": "App.tsx",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
